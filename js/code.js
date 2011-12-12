@@ -145,8 +145,15 @@ var dropBlog = (function(){
     }
 
     function pasteText(e) {
-        console.log($(this));
-        $(this).html($(this).text());
+        /*
+            // TODO: Need to paste where user's caret  is
+
+            var selection = window.getSelection();
+            var range = selection.getRangeAt(0)
+        */
+        e.preventDefault();
+        var text = e.originalEvent.clipboardData.getData('text');
+        $(this).html($(this).html() + text);
     }
 
     function init() {

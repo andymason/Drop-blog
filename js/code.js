@@ -180,8 +180,9 @@ var dropBlog = (function(){
         buildStory(sampleJSON);
         outputJSON();
 
-        $( "#story" ).sortable({
+        $("#story, #preview").sortable({
             handle: '.dragger',
+            connectWith: '.connectedSortable',
             deactivate: updateStoryData
         });
 
@@ -193,7 +194,9 @@ var dropBlog = (function(){
             mediaSearch();
         });
 
-
+        $('#debug_title').click(function() {
+            $('#json_output').toggle();
+        });
     }
 
     return {

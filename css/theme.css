@@ -150,7 +150,13 @@ h3 {
 
 
 
-
+/* Misc. and debugging
+------------------------------------------------------*/
+#debug_title {
+    cursor: pointer;
+    color: #00f;
+    text-decoration: underline;
+}
 
 .example {
     text-decoration: underline;

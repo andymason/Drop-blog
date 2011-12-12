@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/theme.css" />
+    </head>
+    <body>
+        <h1>Drop blog</h1>
+        
+        <!-- Story Start. -->
+        <div id="story">
+        </div>
+        <!-- Story End. -->
+
+        <!-- Search Box -->
+        <section id="search_area">
+            <h2>Add Media</h2>
+            <h3>Examples</h3>
+            <ul>
+                <li href="http://www.youtube.com/watch?v=Zh5knx1Bt64&feature=g-like" class="example">Video: YouTube</li>
+                <li href="http://www.flickr.com/photos/vij/1357346817/" class="example">Photo: Flickr</li>
+                <li href="http://soundcloud.com/ismpof/i-set-my-pixels-on-fire-my" class="example">Audio: Soundcloud</li>
+                <li href="https://twitter.com/#!/guardian/status/146220267218288641" class="example">Twitter</li>
+            </ul>
+            <p>
+                <input type="text" id="search_box" value=""/>
+                <button id="search_button">Search</button>
+            </p>
+
+            <p>
+                <button id="add_text">Add a text block</button>
+                <button id="add_media" disabled="disabled">Add to story</button>
+            </p>
+
+            <div id="preview">
+            </div>
+
+            <h2>Debug JSON Output</h2>
+            <pre id="json_output"></pre>
+
+        </section>
+
+        
+
+        <!-- JavaScript -->
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
+        
+        <script type="text/javascript" src="js/code.js"></script>
+    </body>
+</html>
